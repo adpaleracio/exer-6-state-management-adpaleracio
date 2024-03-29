@@ -49,11 +49,11 @@ class Checkout extends StatelessWidget {
                           context.read<ShoppingCart>().removeAll();
                           Navigator.pushNamed(context, "/products");
                           ScaffoldMessenger.of(context).showSnackBar(
-                              const SnackBar(
-                                content: Text("Payment successful!"),
-                                duration: Duration(seconds: 1, milliseconds: 100),
-                              )
-                            );
+                            const SnackBar(
+                              content: Text("Payment successful!"),
+                              duration: Duration(seconds: 1, milliseconds: 100),
+                            )
+                          );
                         },
                         child: const Text("Pay Now")
                       )
