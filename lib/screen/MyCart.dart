@@ -29,9 +29,9 @@ class MyCart extends StatelessWidget {
                         }, 
                         child: const Text("Reset")
                       ),
-                      ElevatedButton(
+                      ElevatedButton(                          // checkout button
                         onPressed: () {
-                          Navigator.pushNamed(context, "/checkout");
+                          Navigator.pushNamed(context, "/checkout");      // goes to checkout page
                         },
                         child: const Text("Checkout")
                       )
